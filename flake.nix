@@ -38,7 +38,7 @@
 				inherit (pkgs) lib;
 
 				craneLib = crane.lib.${system};
-				src = craneLib.cleanCargoSource (garden-rs-src);
+				src = garden-rs-src;
 
 				# Common arguments can be set here to avoid repeating them later
 				commonArgs = {
