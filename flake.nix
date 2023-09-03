@@ -70,7 +70,6 @@
 				# artifacts from above.
 				garden-rs = craneLib.buildPackage (commonArgs // {
 					inherit cargoArtifacts;
-					doCheck = false;
 
 					nativeCheckInputs = [
 						pkgs.git
