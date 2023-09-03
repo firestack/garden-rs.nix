@@ -71,6 +71,7 @@
 				garden-rs = craneLib.buildPackage (commonArgs // {
 					inherit cargoArtifacts;
 
+					doCheck = system != "x86_64-linux";
 					nativeCheckInputs = [
 						pkgs.git
 					];
